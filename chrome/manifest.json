@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch RU Checker 🇺🇦",
+  "version": "1.4",
+  "description": "Підсвічує підозрілих юзерів у Twitch чаті через artemiano.top",
+  "host_permissions": [
+    "https://www.twitch.tv/*",
+    "https://artemiano.top/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    }
+  }
+}

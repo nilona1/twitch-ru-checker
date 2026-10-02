@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 240px;
+      padding: 14px 16px;
+      font-family: Inter, sans-serif;
+      background: #0e0e10;
+      color: #efeff1;
+      margin: 0;
+    }
+    h2 {
+      margin: 0 0 6px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    p {
+      font-size: 12px;
+      color: #adadb8;
+      margin: 0 0 12px;
+      line-height: 1.5;
+    }
+    .legend {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #eab308; }
+    .dot-green { background: #22c55e; }
+    hr { border-color: #2a2a30; margin: 12px 0; }
+    a {
+      color: #9147ff;
+      font-size: 11px;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h2>🇺🇦 RU Checker</h2>
+  <p>Автоматично перевіряє юзерів у Twitch чаті через <strong>artemiano.top</strong></p>
+  <div class="legend">
+    <div class="legend-item">
+      <div class="dot dot-red"></div>
+      <span>🚩 Підозрілий — російські фоловані</span>
+    </div>
+    <div class="legend-item">
+      <div class="dot dot-yellow"></div>
+      <span>⚡ Попередження — є ризики</span>
+    </div>
+    <div class="legend-item">
+      <div class="dot dot-green"></div>
+      <span>✅ Чисто — нічого не знайдено</span>
+    </div>
+  </div>
+  <hr>
+  <a href="https://artemiano.top/twitch/" target="_blank">🔗 Перевірити вручну</a>
+</body>
+</html>
